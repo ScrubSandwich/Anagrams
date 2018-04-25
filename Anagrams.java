@@ -44,6 +44,11 @@ public class Anagrams {
   }
 
   public static void isAnagram(int p1, int p2) {
+    if (p1 == 0 || p2 == 0) {
+      System.out.println("You entered a word with a number in it! Please enter words only");
+      System.exit(0);
+    }
+
     if (p1 == p2) {
       System.out.println("Anagrams");
     } else {
@@ -56,18 +61,7 @@ public class Anagrams {
       System.out.println("Usage: java Anagrams [word1] [word2]");
       System.exit(0);
     }
-
-    String word1 = args[0].toLowerCase();
-    String word2 = args[1].toLowerCase();
-
-    int product1 = calculateProduct(word1);
-    int product2 = calculateProduct(word2);
-
-    if (product1 == 0 || product2 == 0) {
-      System.out.println("You entered a word with a number in it! Please enter words only");
-      System.exit(0);
-    }
-
-    isAnagram(product1, product2);
+    
+    isAnagram(calculateProduct(args[0].toLowerCase()), calculateProduct(args[1].toLowerCase()));
   }
 }

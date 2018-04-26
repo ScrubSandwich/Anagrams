@@ -13,7 +13,7 @@ The Fundamental Theorem of Arithmetic states that
 > Any integer greater than 1 is either a prime number, or can be written as a unique product of prime numbers (ignoring the order).
 
 This implies that every real integer is a prime or a *unique* product of primes.
-So, given any two words with the same letters but in a different order, they will have the same product when each character is mapped to a unique prime number.
+Given any two words with the same letters, but in a different order, they will have the same product when each character is mapped to a unique prime number and multiplied out.
 
 ## Algorithm
 1. Map each of the 26 English letters to a prime number

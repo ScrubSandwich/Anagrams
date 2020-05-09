@@ -6,7 +6,7 @@ This program determines if two words are anagrams of each other
 2. Clone the repository `git clone https://github.com/jmieczni/Anagrams.git`
 3. Navigate to the Anagrams folder `cd Anagrams`
 4. Compile the program `javac Anagrams.java`
-5. Run the program with the 2 words as arguments `java Anagrams [word2] [word2]`
+5. Run the program with the 2 words as arguments `java Anagrams [word1] [word2]`
 
 ## Background
 The Fundamental Theorem of Arithmetic states that 
